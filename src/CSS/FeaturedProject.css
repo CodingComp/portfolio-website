@@ -1,46 +1,57 @@
-.featuredProject 
-{
-    border: solid 2px #9e9e9e9e;
-    border-radius: 10px;
-    display: flex;
+.featuredProject {
+  border: solid 2px #9e9e9e9e;
+  border-radius: 10px;
+  display: flex;
 
-    width: 800px;
-    height: 300px;    
+  background-color: #3b40489e;
 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 800px;
+  height: 300px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.infoPanel, .imagePanel 
-{
-    flex: 1;
-    position: relative;
-
+.infoPanel,
+.imagePanel {
+  flex: 1;
+  position: relative;
 }
 
-.infoPanel 
-{
-    text-align: left;
-    left: 25px;
+.infoPanel {
+  text-align: left;
+  left: 25px;
 }
 
-.projectImage 
-{
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-    border-radius: 0px 8px 8px 0px;
+.infoPanel p {
+  padding-right: 40px;
 }
 
-.githubLink 
-{
-    position: absolute;
-    bottom: 20px;
+.projectImage {
+  width: 100%;
+  height: 100%;
 
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
+  object-fit: cover;
+  box-shadow: -5px 0px 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0px 8px 8px 0px;
+}
 
-    background-color: #56c1fe;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: white;
+.githubLink {
+  position: absolute;
+  bottom: 20px;
+
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+
+  background-color: #56c1fe;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.githubLink:hover {
+  background-color: #3fa6df;
+}
+
+.githubLink:active {
+  transform: scale(0.95);
 }
